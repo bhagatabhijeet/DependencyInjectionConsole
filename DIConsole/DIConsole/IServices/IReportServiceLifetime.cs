@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,6 @@ namespace DIConsole.IServices
     {
         Guid Id { get; }
 
-        ServiceLifetime Lifetime
-        {
-            get;
-        }
+        ServiceLifetime Lifetime { get; }
     }
+}

@@ -1,4 +1,5 @@
 ﻿using DIConsole.IServices;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,7 @@ namespace DIConsole.Implementations
     internal class ExampleScopedService : IExampleScopedService
     {
         public Guid Id => Guid.NewGuid();
+
+        public ServiceLifetime Lifetime => ServiceLifetime.Scoped;
     }
 }
