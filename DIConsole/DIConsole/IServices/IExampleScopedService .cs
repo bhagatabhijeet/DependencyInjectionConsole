@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DIConsole.IServices
 {
-    public interface IExampleScopedService
+    public interface IExampleScopedService: IReportServiceLifetime
     {
         ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Scoped;
     }
