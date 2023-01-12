@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DIConsole.Implementations
 {
-    internal class ExampleSingletonService : InterfIExampleSingletonService
+    internal class ExampleSingletonService : IExampleSingletonService
     {
         public Guid Id => Guid.NewGuid();
     }

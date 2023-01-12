@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DIConsole.IServices
 {
-    public interface InterfIExampleSingletonService: IReportServiceLifetime
+    public interface IExampleSingletonService : IReportServiceLifetime
     {
         ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Singleton;
     }

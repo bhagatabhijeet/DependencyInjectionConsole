@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DIConsole.Implementations
 {
-    internal class ExampleTransientSeervice : IExampleTransientService
+    internal class ExampleTransientService : IExampleTransientService
     {
         public Guid Id => Guid.NewGuid();
     }
