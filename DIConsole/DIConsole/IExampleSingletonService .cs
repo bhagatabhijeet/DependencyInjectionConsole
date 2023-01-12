@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DIConsole
 {
-    internal interface IExampleScopedService
+    internal interface InterfIExampleSingletonService
     {
-        ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Scoped;
+        ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Singleton;
     }
 }
