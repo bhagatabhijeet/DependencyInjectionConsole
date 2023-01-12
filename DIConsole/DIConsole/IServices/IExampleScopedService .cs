@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DIConsole
+namespace DIConsole.IServices
 {
-    internal interface IExampleScopedService
+    public interface IExampleScopedService
     {
         ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Scoped;
     }

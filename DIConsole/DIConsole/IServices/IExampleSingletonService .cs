@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DIConsole
+namespace DIConsole.IServices
 {
-    internal interface InterfIExampleSingletonService
+    public interface InterfIExampleSingletonService
     {
         ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Singleton;
     }

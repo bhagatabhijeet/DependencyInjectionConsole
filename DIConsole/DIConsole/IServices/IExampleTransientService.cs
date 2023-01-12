@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DIConsole
+namespace DIConsole.IServices
 {
-    internal interface IExampleTransientService
+    public interface IExampleTransientService
     {
         ServiceLifetime IReportServiceLifetime.Lifetime => ServiceLifetime.Transient;
     }
-   
+
 }

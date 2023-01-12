@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DIConsole
+namespace DIConsole.IServices
 {
-    internal interface IReportServiceLifetime
+    public interface IReportServiceLifetime
     {
         Guid Id { get; }
 
@@ -14,4 +14,4 @@ namespace DIConsole
         {
             get;
         }
-}
+    }
